@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+/* Tabs Container */
+.tabs-container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+}
+
+/* Tabs Header */
+.tabs-header {
+  display: flex;
+  align-items: center;
+  background: rgba(98, 0, 234, 0.9); /* Semi-transparent purple */
+  padding: 10px;
+  border-bottom: 2px solid rgba(55, 0, 179, 0.9); /* Semi-transparent dark purple */
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  background: rgba(124, 77, 255, 0.9); /* Semi-transparent light purple */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.tab-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tab-button.active {
+  background: rgba(55, 0, 179, 0.9); /* Semi-transparent dark purple */
+  font-weight: bold;
+}
+
+.close-button {
+  background: rgba(124, 77, 255, 0.9); /* Semi-transparent red */
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s ease;
+}
+
+.close-button:hover {
+  background: rgba(213, 0, 0, 0.9); /* Semi-transparent dark red */
+}
+
+.add-tab-button {
+  background: rgba(3, 218, 198, 0.9); /* Semi-transparent teal */
+  border: none;
+  color: #000;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: auto;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.add-tab-button:hover {
+  background: rgba(1, 135, 134, 0.9); /* Semi-transparent dark teal */
+}
+
+/* Tab Content */
+.tab-content {
+  padding: 20px;
+  text-align: center;
+  height: 400px; /* Fixed height for consistent layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(249, 249, 249, 0.9); /* Semi-transparent light gray */
+}
+
+.tab-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
