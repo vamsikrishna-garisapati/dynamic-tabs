@@ -9,7 +9,7 @@ const DynamicTabs = () => {
     try {
       const response = await fetch(`https://api.api-ninjas.com/v1/randomimage?category=${category}`, {
         headers: { 
-          'X-Api-Key': '1Whpl0478Bzb8Qp2OLgTww==zCHR9mdr69iYMhiN', // Replace with your API key
+          'X-Api-Key': '', // Replace with your API key
           'Accept': 'image/jpg'
         }
       });
